@@ -172,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#vorgehen-website-verndern" id="toc-vorgehen-website-verndern" class="nav-link active" data-scroll-target="#vorgehen-website-verndern">Vorgehen Website ver�ndern</a>
+  <li><a href="#vorgehen" id="toc-vorgehen" class="nav-link active" data-scroll-target="#vorgehen">Vorgehen</a>
   <ul class="collapse">
   <li><a href="#aktuellen-stand-der-website-auf-pc-laden" id="toc-aktuellen-stand-der-website-auf-pc-laden" class="nav-link" data-scroll-target="#aktuellen-stand-der-website-auf-pc-laden">Aktuellen Stand der Website auf PC laden</a></li>
   <li><a href="#website-anpassen" id="toc-website-anpassen" class="nav-link" data-scroll-target="#website-anpassen">Website anpassen</a></li>
@@ -205,18 +205,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="vorgehen-website-verndern" class="level1">
-<h1>Vorgehen Website ver�ndern</h1>
-<section id="aktuellen-stand-der-website-auf-pc-laden" class="level2">
-<h2 class="anchored" data-anchor-id="aktuellen-stand-der-website-auf-pc-laden">Aktuellen Stand der Website auf PC laden</h2>
+<section id="vorgehen" class="level2">
+<h2 class="anchored" data-anchor-id="vorgehen">Vorgehen</h2>
+<section id="aktuellen-stand-der-website-auf-pc-laden" class="level3">
+<h3 class="anchored" data-anchor-id="aktuellen-stand-der-website-auf-pc-laden">Aktuellen Stand der Website auf PC laden</h3>
 <ul>
-<li><p>In GithubDesktop den <code>main</code>-Branch <strong>pullen</strong></p></li>
+<li><p>In GithubDesktop den <code>master</code>-Branch <strong>pullen</strong></p></li>
 <li><p>In GithubDesktop einen neuen Branch erstellen (<strong>branchen</strong>) (sinnvoller Name z.B. <code>test-pageedit</code>)</p></li>
 <li><p>Auf PC <code>RStudio</code>-Projekt �ffnen</p></li>
 </ul>
 </section>
-<section id="website-anpassen" class="level2">
-<h2 class="anchored" data-anchor-id="website-anpassen">Website anpassen</h2>
+<section id="website-anpassen" class="level3">
+<h3 class="anchored" data-anchor-id="website-anpassen">Website anpassen</h3>
 <ul>
 <li><p>Anpassungen vornehmen (z.B. Neues <code>.qmd</code> File erstellen und abspeichern unter <code>pages/chapters/</code> oder bestehendes File �ndern)</p></li>
 <li><p>Checken ob der Code l�uft mit <code>Render</code></p></li>
@@ -224,21 +224,21 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Seite builden: <code>Build</code> &gt; <code>Render Website</code></p></li>
 </ul>
 </section>
-<section id="nderungen-online-stellen" class="level2">
-<h2 class="anchored" data-anchor-id="nderungen-online-stellen">�nderungen Online stellen</h2>
+<section id="nderungen-online-stellen" class="level3">
+<h3 class="anchored" data-anchor-id="nderungen-online-stellen">�nderungen Online stellen</h3>
 <ul>
 <li><p>In GitDesktop �nderungen <strong>comitten</strong> (sinnvolle Commit-Msg erstellen)</p></li>
 <li><p>In GitDesktop den Commit auf Branch <strong>pushen</strong></p></li>
-<li><p>Auf Github Website <strong>merge request</strong> erstellen (Branch –&gt; Main), checken ob <em>mergeable</em></p></li>
+<li><p>Auf Github Website <strong>merge request</strong> erstellen (<code>eigenerbranchname</code>–&gt; <code>master</code>), checken ob <em>mergeable</em></p></li>
 <li><p>Wenn <em>mergeable</em> <strong>mergen</strong>, dann wird die Website online aktualisiert</p></li>
 <li><p>Checken ob das geklappt hat</p></li>
 </ul>
 </section>
 </section>
-<section id="good-to-know" class="level1">
-<h1>Good to know</h1>
-<section id="gitignore" class="level2">
-<h2 class="anchored" data-anchor-id="gitignore">.gitignore</h2>
+<section id="good-to-know" class="level2">
+<h2 class="anchored" data-anchor-id="good-to-know">Good to know</h2>
+<section id="gitignore" class="level3">
+<h3 class="anchored" data-anchor-id="gitignore">.gitignore</h3>
 <p>Im <code>.gitignore</code>- File werden alle Ordner/Files benannt, die <strong>nicht</strong> auf Github hochgeladen werden sollen. Die sind aber auch <strong>nicht</strong> versionsgesch�tzt bzw. f�r andere Personen verf�gbar, die das Repositorium <strong>pullen</strong>.</p>
 <p>In <code>archive</code> oder <code>private</code> kannst du zB etwas tun, dass nicht ver�ndert werden soll, nicht gesichert aber zwischengelagert werden muss. Ich brauche das manchmal, wenn ich bei Git unsicher bin beim Wechseln des Branches, dann kopier ich mir meine ge�nderten Files ins <code>archive</code>, dass dieses - falls ich einen Fehler mache - nichts �berschreibe. In <code>private</code> mach ich mir z.B. Todo Listen, Notizen oder Datens�tze, die ich noch nicht hochladen aber schon im Projekt verwenden will.</p>
 

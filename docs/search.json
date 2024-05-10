@@ -74,34 +74,20 @@
     "href": "pages/chapters/page_2.html",
     "title": "Vorgehen Website aktualisieren",
     "section": "",
-    "text": "In GithubDesktop den main-Branch pullen\nIn GithubDesktop einen neuen Branch erstellen (branchen) (sinnvoller Name z.B. test-pageedit)\nAuf PC RStudio-Projekt �ffnen\n\n\n\n\n\nAnpassungen vornehmen (z.B. Neues .qmd File erstellen und abspeichern unter pages/chapters/ oder bestehendes File �ndern)\nChecken ob der Code l�uft mit Render\nim _quarto.yml-File das neue .qmd-File erg�nzen\nSeite builden: Build &gt; Render Website\n\n\n\n\n\nIn GitDesktop �nderungen comitten (sinnvolle Commit-Msg erstellen)\nIn GitDesktop den Commit auf Branch pushen\nAuf Github Website merge request erstellen (Branch –&gt; Main), checken ob mergeable\nWenn mergeable mergen, dann wird die Website online aktualisiert\nChecken ob das geklappt hat"
+    "text": "In GithubDesktop den master-Branch pullen\nIn GithubDesktop einen neuen Branch erstellen (branchen) (sinnvoller Name z.B. test-pageedit)\nAuf PC RStudio-Projekt �ffnen\n\n\n\n\n\nAnpassungen vornehmen (z.B. Neues .qmd File erstellen und abspeichern unter pages/chapters/ oder bestehendes File �ndern)\nChecken ob der Code l�uft mit Render\nim _quarto.yml-File das neue .qmd-File erg�nzen\nSeite builden: Build &gt; Render Website\n\n\n\n\n\nIn GitDesktop �nderungen comitten (sinnvolle Commit-Msg erstellen)\nIn GitDesktop den Commit auf Branch pushen\nAuf Github Website merge request erstellen (eigenerbranchname–&gt; master), checken ob mergeable\nWenn mergeable mergen, dann wird die Website online aktualisiert\nChecken ob das geklappt hat"
   },
   {
-    "objectID": "pages/chapters/page_2.html#aktuellen-stand-der-website-auf-pc-laden",
-    "href": "pages/chapters/page_2.html#aktuellen-stand-der-website-auf-pc-laden",
+    "objectID": "pages/chapters/page_2.html#vorgehen",
+    "href": "pages/chapters/page_2.html#vorgehen",
     "title": "Vorgehen Website aktualisieren",
     "section": "",
-    "text": "In GithubDesktop den main-Branch pullen\nIn GithubDesktop einen neuen Branch erstellen (branchen) (sinnvoller Name z.B. test-pageedit)\nAuf PC RStudio-Projekt �ffnen"
+    "text": "In GithubDesktop den master-Branch pullen\nIn GithubDesktop einen neuen Branch erstellen (branchen) (sinnvoller Name z.B. test-pageedit)\nAuf PC RStudio-Projekt �ffnen\n\n\n\n\n\nAnpassungen vornehmen (z.B. Neues .qmd File erstellen und abspeichern unter pages/chapters/ oder bestehendes File �ndern)\nChecken ob der Code l�uft mit Render\nim _quarto.yml-File das neue .qmd-File erg�nzen\nSeite builden: Build &gt; Render Website\n\n\n\n\n\nIn GitDesktop �nderungen comitten (sinnvolle Commit-Msg erstellen)\nIn GitDesktop den Commit auf Branch pushen\nAuf Github Website merge request erstellen (eigenerbranchname–&gt; master), checken ob mergeable\nWenn mergeable mergen, dann wird die Website online aktualisiert\nChecken ob das geklappt hat"
   },
   {
-    "objectID": "pages/chapters/page_2.html#website-anpassen",
-    "href": "pages/chapters/page_2.html#website-anpassen",
+    "objectID": "pages/chapters/page_2.html#good-to-know",
+    "href": "pages/chapters/page_2.html#good-to-know",
     "title": "Vorgehen Website aktualisieren",
-    "section": "",
-    "text": "Anpassungen vornehmen (z.B. Neues .qmd File erstellen und abspeichern unter pages/chapters/ oder bestehendes File �ndern)\nChecken ob der Code l�uft mit Render\nim _quarto.yml-File das neue .qmd-File erg�nzen\nSeite builden: Build &gt; Render Website"
-  },
-  {
-    "objectID": "pages/chapters/page_2.html#nderungen-online-stellen",
-    "href": "pages/chapters/page_2.html#nderungen-online-stellen",
-    "title": "Vorgehen Website aktualisieren",
-    "section": "",
-    "text": "In GitDesktop �nderungen comitten (sinnvolle Commit-Msg erstellen)\nIn GitDesktop den Commit auf Branch pushen\nAuf Github Website merge request erstellen (Branch –&gt; Main), checken ob mergeable\nWenn mergeable mergen, dann wird die Website online aktualisiert\nChecken ob das geklappt hat"
-  },
-  {
-    "objectID": "pages/chapters/page_2.html#gitignore",
-    "href": "pages/chapters/page_2.html#gitignore",
-    "title": "Vorgehen Website aktualisieren",
-    "section": ".gitignore",
-    "text": ".gitignore\nIm .gitignore- File werden alle Ordner/Files benannt, die nicht auf Github hochgeladen werden sollen. Die sind aber auch nicht versionsgesch�tzt bzw. f�r andere Personen verf�gbar, die das Repositorium pullen.\nIn archive oder private kannst du zB etwas tun, dass nicht ver�ndert werden soll, nicht gesichert aber zwischengelagert werden muss. Ich brauche das manchmal, wenn ich bei Git unsicher bin beim Wechseln des Branches, dann kopier ich mir meine ge�nderten Files ins archive, dass dieses - falls ich einen Fehler mache - nichts �berschreibe. In private mach ich mir z.B. Todo Listen, Notizen oder Datens�tze, die ich noch nicht hochladen aber schon im Projekt verwenden will."
+    "section": "Good to know",
+    "text": "Good to know\n\n.gitignore\nIm .gitignore- File werden alle Ordner/Files benannt, die nicht auf Github hochgeladen werden sollen. Die sind aber auch nicht versionsgesch�tzt bzw. f�r andere Personen verf�gbar, die das Repositorium pullen.\nIn archive oder private kannst du zB etwas tun, dass nicht ver�ndert werden soll, nicht gesichert aber zwischengelagert werden muss. Ich brauche das manchmal, wenn ich bei Git unsicher bin beim Wechseln des Branches, dann kopier ich mir meine ge�nderten Files ins archive, dass dieses - falls ich einen Fehler mache - nichts �berschreibe. In private mach ich mir z.B. Todo Listen, Notizen oder Datens�tze, die ich noch nicht hochladen aber schon im Projekt verwenden will."
   }
 ]
