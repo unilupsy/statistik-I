@@ -1,0 +1,74 @@
+---
+title: "Einführung in Quarto"
+---
+
+## Überschriften
+
+Überschriften werden so verwendet: 
+
+# Überschrift gross
+
+Text
+
+## Überschrift mittel
+
+Text
+
+### Überschrift klein
+
+Text
+
+#### Überschrift sehr klein
+
+Text
+
+## Listen
+
+Listen werden mit einer Lückke (Enter) und Strichen erstellt:
+
+- erster Punkt
+- zweiter Punkt
+- dritter Punkt
+
+Nummerierte Listen werden mit Zahlen inkl. Punkt erstellt:
+
+1. erster Punkt
+2. zweiter Punkt
+3. dritter Punkt
+
+## Textformattierung
+
+__fetter Text__ mit 2 Underlines vorher und nachher
+
+_kursiver Text_ mit 1 Underline vorher und nachher
+
+> Eingerückter Text: zb für Zitationen aus Artikeln oder Definitionen
+
+Mit dem `$` Zeichen können mathematische Zeichen dargestellt werden, z.B. innerhalb des Textes $p < 0.001$ oder griechische Buchstaben mit einem zusätzlichen Backslash: $\alpha$, oder auch als ganze Formeln in einer eigenen Zeile:
+
+$$ a^2 + b^2 = c^2 $$
+
+## Verlinkungen 
+
+Links können so dargestellt werden: <https://quarto.org/docs/websites> oder mit [Platzhalter](https://quarto.org/docs/websites).
+
+## Code
+
+`Code` kann mit zwei Backticks eingerahmt werden, um den Text in Code-Schrift anzuzeigen. 
+
+In einem Codesnippet kann der Code auch ausgeführt werden.
+
+```{r}
+a = 1 + 2
+a
+```
+
+Innerhalb eines Textes kann so auch eine Variable (z.B. das oben definierte `a`, also ```r a```) referenziert werden.
+
+## Dokument knitten
+
+Mit `Render` wird die Page "geknitted" d.h. ins `.html`-Format übersetzt (oder wenn anders spezifiziert z.B. ins `.pdf` Format)
+
+
+
+

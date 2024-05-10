@@ -1,0 +1,13 @@
+---
+title: "Statistik 1"
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+::: callout-note
+## Callout Überschrift
+
+Text
+:::

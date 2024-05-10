@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+  - index.qmd
+  - pages/admin/*.qmd
+  - pages/chapters/*.qmd
+
+website:
+  title: "Statistik 1"
+  site-url: https://psylu.github.io/statistik_1/
+  #favicon: /assets/logo.png
+  reader-mode: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd 
+  sidebar:
+    style: floating
+    search: true
+    contents:
+    - section: Section1
+      contents:
+       - pages/chapters/page_1.qmd
+       - pages/chapters/page_2.qmd
+       - pages/chapters/webR.qmd
+format:
+  html:
+    theme:
+      light:
+      - flatly
+      - styles/light.scss
+      dark:
+      - darkly
+      - styles/dark.scss
+    css: styles.css
+    toc: true
+    link-external-newwindow: true
+    
+editor:
+  render-on-save: true
