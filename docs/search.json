@@ -4,7 +4,7 @@
     "href": "pages/chapters/webR.html",
     "title": "WebR",
     "section": "",
-    "text": "Test\nAuf dieser Seite können wir WebR testen.\nWird noch implementiert.\n\n\n\n\nReusehttps://creativecommons.org/licenses/by-sa/4.0/"
+    "text": "Test\nAuf dieser Seite können wir WebR testen.\nWird noch implementiert.\n\nInteractive R code editor\nLoading webR...\nfit &lt;- lm(mpg ~ am, data=mtcars)\nsummary(fit)\n\n\n\n\n\n\n\n\nReusehttps://creativecommons.org/licenses/by-sa/4.0/"
   },
   {
     "objectID": "pages/chapters/page_1.html",

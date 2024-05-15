@@ -174,7 +174,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#test" id="toc-test" class="nav-link active" data-scroll-target="#test">Test</a></li>
+  <li><a href="#test" id="toc-test" class="nav-link active" data-scroll-target="#test">Test</a>
+  <ul class="collapse">
+  <li><a href="#interactive-r-code-editor" id="toc-interactive-r-code-editor" class="nav-link" data-scroll-target="#interactive-r-code-editor">Interactive R code editor</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -213,8 +216,70 @@ ul.task-list li input[type="checkbox"] {
 <h1>Test</h1>
 <p>Auf dieser Seite können wir WebR testen.</p>
 <p>Wird noch implementiert.</p>
+<section id="interactive-r-code-editor" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-r-code-editor">Interactive R code editor</h3>
+<button class="btn btn-success btn-sm" disabled="" type="button" id="runButton">Loading webR...</button>
+<div id="editor">fit &lt;- lm(mpg ~ am, data=mtcars)
+summary(fit)</div>
+<pre><code id="out"></code></pre>
+<canvas id="canvas" width="1008" height="1008" style="display: none; margin: auto; width: 700px;"></canvas>
+<script type="module">
+  var editor = ace.edit("editor");
+  editor.setOptions({ fontSize: "11pt", maxLines: Infinity });
+  editor.session.setMode("ace/mode/r");
+
+  import { WebR } from 'https://webr.r-wasm.org/?env:WEBR_VERSION_TAG/webr.mjs';
+  const webR = new WebR();
+  await webR.init();
+  await webR.evalRVoid('options(device=webr::canvas)');
+  const shelter = await new webR.Shelter();
+
+  // Handle webR output messages in an async loop
+  (async ()=>{
+    for (;;) {
+      const output = await webR.read();
+      switch (output.type) {
+        case 'canvas':
+          let canvas = document.getElementById('canvas');
+          if (output.data.event === 'canvasNewPage') {
+            canvas.style.display = 'block';
+            canvas.getContext('2d').clearRect(0, 0, 1008, 1008);
+          }
+          if (output.data.event === 'canvasImage') {
+            canvas.getContext('2d').drawImage(output.data.image, 0, 0);
+          }
+          break;
+        default:
+          break;
+      }
+    }
+  })();
+
+  async function runR() {
+    document.getElementById('canvas').style.display = 'none';
+    let code = editor.getValue();
+    const result = await shelter.captureR(code, {
+      withAutoprint: true,
+      captureStreams: true,
+      captureConditions: false
+    });
+    try {
+      const out = result.output.filter(
+        evt => evt.type == 'stdout' || evt.type == 'stderr'
+      ).map((evt) => evt.data);
+      document.getElementById('out').innerText = out.join('\n');
+    } finally {
+      shelter.purge();
+    }
+  }
+  document.getElementById('runButton').onclick = runR;
+  document.getElementById('runButton').innerText = 'Run code';
+  document.getElementById('runButton').disabled = false;
+
+</script>
 
 
+</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></div></div></section></div></main> <!-- /main -->
