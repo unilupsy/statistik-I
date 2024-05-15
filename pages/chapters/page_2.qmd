@@ -2,18 +2,17 @@
 title: "Vorgehen Website aktualisieren"
 ---
 
+## Vorgehen
 
-# Vorgehen Website verändern
+### Aktuellen Stand der Website auf PC laden
 
-## Aktuellen Stand der Website auf PC laden
-
--   In GithubDesktop den `main`-Branch **pullen**
+-   In GithubDesktop den `master`-Branch **pullen**
 
 -   In GithubDesktop einen neuen Branch erstellen (**branchen**) (sinnvoller Name z.B. `test-pageedit`)
 
 -   Auf PC `RStudio`-Projekt öffnen
 
-## Website anpassen
+### Website anpassen
 
 -   Anpassungen vornehmen (z.B. Neues `.qmd` File erstellen und abspeichern unter `pages/chapters/` oder bestehendes File ändern)
 
@@ -23,22 +22,22 @@ title: "Vorgehen Website aktualisieren"
 
 -   Seite builden: `Build` \> `Render Website`
 
-## Änderungen Online stellen
+### Änderungen Online stellen
 
 -   In GitDesktop Änderungen **comitten** (sinnvolle Commit-Msg erstellen)
 
 -   In GitDesktop den Commit auf Branch **pushen**
 
--   Auf Github Website **merge request** erstellen (Branch --\> Main), checken ob *mergeable*
+-   Auf Github Website **merge request** erstellen (`eigenerbranchname`--\> `master`), checken ob *mergeable*
 
 -   Wenn *mergeable* **mergen**, dann wird die Website online aktualisiert
 
 -   Checken ob das geklappt hat
 
 
-# Good to know
+## Good to know
 
-## .gitignore
+### .gitignore
 
 Im `.gitignore`- File werden alle Ordner/Files benannt, die __nicht__ auf Github hochgeladen werden sollen. Die sind aber auch __nicht__ versionsgeschützt bzw. für andere Personen verfügbar, die das Repositorium __pullen__.
 
