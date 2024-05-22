@@ -1,0 +1,36 @@
+---
+title: "Übung 1"
+---
+
+## Übung 1
+
+Messtheoretische Grundlagen und Skalenniveaus
+
+# Aufgabe 1
+
+Geben Sie an, auf welchem Skalenniveau die folgenden Variablen gemessen werden können:
+
+a.	Matrikelnummer
+b.	Wohnort
+c.	Körpergrösse einer Person (in cm)
+d.	Alter einer Person (in _Jahren_)
+e.	Anzahl Zimmerpflanzen 
+f.	Schulnoten
+g.	Rang beim letzten __Marathon__
+h.	Reaktionszeit 
+i.	IQ-Werte
+j.	Monatliche Ausgaben (in CHF)
+
+
+# Aufgabe 2
+
+Informieren Sie sich über Ihre Fakultät: <https://www.unilu.ch/fakultaeten/vpf/>.
+
+Wer unterrichtet Klinische Psychologie 1 & 2?
+
+
+
+
+
+
+
