@@ -25,6 +25,10 @@ website:
        - pages/chapters/page_1.qmd
        - pages/chapters/page_2.qmd
        - pages/chapters/webR.qmd
+    - section: Uebungen
+      contents:
+       - pages/chapters/uebung_1.qmd
+       - pages/chapters/uebung_3.qmd
 format:
   html:
     theme:
