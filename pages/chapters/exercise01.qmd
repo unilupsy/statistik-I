@@ -2,9 +2,9 @@
 title: "Übung 1"
 ---
 
-## Übung 1
 
-Messtheoretische Grundlagen und Skalenniveaus
+
+Thema: Messtheoretische Grundlagen und Skalenniveaus
 
 # Aufgabe 1
 

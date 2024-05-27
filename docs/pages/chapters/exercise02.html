@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Statistik 1 - Einführung in Quarto</title>
+<title>Statistik 1 - Übung 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -103,35 +69,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -178,7 +115,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/chapters/page_1.html">Section1</a></li><li class="breadcrumb-item"><a href="../../pages/chapters/page_1.html">Einführung in Quarto</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/chapters/exercise01.html">�bungen</a></li><li class="breadcrumb-item"><a href="../../pages/chapters/exercise02.html">Übung 2</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -209,7 +146,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/chapters/page_1.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../pages/chapters/page_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Einführung in Quarto</span></a>
   </div>
 </li>
@@ -244,7 +181,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/chapters/exercise02.html" class="sidebar-item-text sidebar-link">
+  <a href="../../pages/chapters/exercise02.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Übung 2</span></a>
   </div>
 </li>
@@ -272,28 +209,17 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#überschriften" id="toc-überschriften" class="nav-link active" data-scroll-target="#überschriften">Überschriften</a></li>
-  <li><a href="#überschrift-gross" id="toc-überschrift-gross" class="nav-link" data-scroll-target="#überschrift-gross">Überschrift gross</a>
-  <ul class="collapse">
-  <li><a href="#überschrift-mittel" id="toc-überschrift-mittel" class="nav-link" data-scroll-target="#überschrift-mittel">Überschrift mittel</a>
-  <ul class="collapse">
-  <li><a href="#überschrift-klein" id="toc-überschrift-klein" class="nav-link" data-scroll-target="#überschrift-klein">Überschrift klein</a></li>
-  </ul></li>
-  <li><a href="#listen" id="toc-listen" class="nav-link" data-scroll-target="#listen">Listen</a></li>
-  <li><a href="#textformattierung" id="toc-textformattierung" class="nav-link" data-scroll-target="#textformattierung">Textformattierung</a></li>
-  <li><a href="#verlinkungen" id="toc-verlinkungen" class="nav-link" data-scroll-target="#verlinkungen">Verlinkungen</a></li>
-  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
-  <li><a href="#dokument-knitten" id="toc-dokument-knitten" class="nav-link" data-scroll-target="#dokument-knitten">Dokument knitten</a></li>
-  </ul></li>
+  <li><a href="#aufgabe-1" id="toc-aufgabe-1" class="nav-link active" data-scroll-target="#aufgabe-1">Aufgabe 1</a></li>
+  <li><a href="#aufgabe-2" id="toc-aufgabe-2" class="nav-link" data-scroll-target="#aufgabe-2">Aufgabe 2</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/chapters/page_1.html">Section1</a></li><li class="breadcrumb-item"><a href="../../pages/chapters/page_1.html">Einführung in Quarto</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/chapters/exercise01.html">�bungen</a></li><li class="breadcrumb-item"><a href="../../pages/chapters/exercise02.html">Übung 2</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Einführung in Quarto</h1>
+<h1 class="title">Übung 2</h1>
 </div>
 
 
@@ -310,73 +236,14 @@ window.Quarto = {
 </header>
 
 
-<section id="überschriften" class="level2">
-<h2 class="anchored" data-anchor-id="überschriften">Überschriften</h2>
-<p>Überschriften werden so verwendet:</p>
+<p>Thema: Univariate Deskriptivstatistik für nominale und ordinale Variablen</p>
+<section id="aufgabe-1" class="level1">
+<h1>Aufgabe 1</h1>
 </section>
-<section id="überschrift-gross" class="level1">
-<h1>Überschrift gross</h1>
-<p>Text</p>
-<section id="überschrift-mittel" class="level2">
-<h2 class="anchored" data-anchor-id="überschrift-mittel">Überschrift mittel</h2>
-<p>Text</p>
-<section id="überschrift-klein" class="level3">
-<h3 class="anchored" data-anchor-id="überschrift-klein">Überschrift klein</h3>
-<p>Text</p>
-<section id="überschrift-sehr-klein" class="level4">
-<h4 class="anchored" data-anchor-id="überschrift-sehr-klein">Überschrift sehr klein</h4>
-<p>Text</p>
-</section>
-</section>
-</section>
-<section id="listen" class="level2">
-<h2 class="anchored" data-anchor-id="listen">Listen</h2>
-<p>Listen werden mit einer Lückke (Enter) und Strichen erstellt:</p>
-<ul>
-<li>erster Punkt</li>
-<li>zweiter Punkt</li>
-<li>dritter Punkt</li>
-</ul>
-<p>Nummerierte Listen werden mit Zahlen inkl. Punkt erstellt:</p>
-<ol type="1">
-<li>erster Punkt</li>
-<li>zweiter Punkt</li>
-<li>dritter Punkt</li>
-</ol>
-</section>
-<section id="textformattierung" class="level2">
-<h2 class="anchored" data-anchor-id="textformattierung">Textformattierung</h2>
-<p><strong>fetter Text</strong> mit 2 Underlines vorher und nachher</p>
-<p><em>kursiver Text</em> mit 1 Underline vorher und nachher</p>
-<blockquote class="blockquote">
-<p>Eingerückter Text: zb für Zitationen aus Artikeln oder Definitionen</p>
-</blockquote>
-<p>Mit dem <code>$</code> Zeichen können mathematische Zeichen dargestellt werden, z.B. innerhalb des Textes <span class="math inline">\(p &lt; 0.001\)</span> oder griechische Buchstaben mit einem zusätzlichen Backslash: <span class="math inline">\(\alpha\)</span>, oder auch als ganze Formeln in einer eigenen Zeile:</p>
-<p><span class="math display">\[ a^2 + b^2 = c^2 \]</span></p>
-</section>
-<section id="verlinkungen" class="level2">
-<h2 class="anchored" data-anchor-id="verlinkungen">Verlinkungen</h2>
-<p>Links können so dargestellt werden: <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a> oder mit <a href="https://quarto.org/docs/websites">Platzhalter</a>.</p>
-</section>
-<section id="code" class="level2">
-<h2 class="anchored" data-anchor-id="code">Code</h2>
-<p><code>Code</code> kann mit zwei Backticks eingerahmt werden, um den Text in Code-Schrift anzuzeigen.</p>
-<p>In einem Codesnippet kann der Code auch ausgeführt werden.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">=</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">2</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 3</code></pre>
-</div>
-</div>
-<p>Innerhalb eines Textes kann so auch eine Variable (z.B. das oben definierte <code>a</code>, also <code>3</code>) referenziert werden.</p>
-</section>
-<section id="dokument-knitten" class="level2">
-<h2 class="anchored" data-anchor-id="dokument-knitten">Dokument knitten</h2>
-<p>Mit <code>Render</code> wird die Page “geknitted” d.h. ins <code>.html</code>-Format übersetzt (oder wenn anders spezifiziert z.B. ins <code>.pdf</code> Format)</p>
+<section id="aufgabe-2" class="level1">
+<h1>Aufgabe 2</h1>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

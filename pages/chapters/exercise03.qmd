@@ -1,16 +1,16 @@
 ---
-title: "Uebung 3"
+title: "Ãœbung 3"
 ---
 
-Thema: Deskriptivstatistik für metrische Variablen
+Thema: Univariate Deskriptivstatistik fÃ¼r metrische Variablen
 
 ## Aufgabe 1
 
-Geben Sie an, auf welchem Skalenniveau die folgenden Variablen gemessen werden können:
+Geben Sie an, auf welchem Skalenniveau die folgenden Variablen gemessen werden kÃ¶nnen:
 
 a.	Matrikelnummer
 b.	Wohnort
-c.	Körpergrösse einer Person (in cm)
+c.	KÃ¶rpergrÃ¶sse einer Person (in cm)
 d.	Alter einer Person (in _Jahren_)
 e.	Anzahl Zimmerpflanzen 
 f.	Schulnoten
@@ -26,12 +26,12 @@ nominal: Matrikelnummer, Wohnort
 
 ordinal: Schulnoten, Rangierung
 
-metrisch: Körpergrösse, Alter, Anzahl Zimmerpflanzen, Reaktionszeit, IQ-Werte, Monatliche Ausgaben
+metrisch: KÃ¶rpergrÃ¶sse, Alter, Anzahl Zimmerpflanzen, Reaktionszeit, IQ-Werte, Monatliche Ausgaben
 :::
 
 ## Aufgabe 2
 
-Mit 10 Personen wurde ein IQ-Test durchgeführt. In der folgenden Tabelle sind die Testwerte notiert.
+Mit 10 Personen wurde ein IQ-Test durchgefÃ¼hrt. In der folgenden Tabelle sind die Testwerte notiert.
 
 | ID  | Testwert  |
 |--------|--------|
@@ -51,7 +51,7 @@ Mit 10 Personen wurde ein IQ-Test durchgeführt. In der folgenden Tabelle sind di
 a. Berechnen Sie den Mittelwert.
 
 ::: {.callout-caution collapse="true"}
-## Lösung Aufgabe 2a
+## LÃ¶sung Aufgabe 2a
 
 $\bar{x} = 100$
 :::
@@ -59,7 +59,7 @@ $\bar{x} = 100$
 b. Berechnen Sie die Varianz und die Standardabweichung. 
 
 ::: {.callout-caution collapse="true"}
-## Lösung Aufgabe 2b
+## LÃ¶sung Aufgabe 2b
 
 $s^2_x = 210.8$
 
@@ -69,7 +69,7 @@ $s_x = 14.5$
 c. Geben Sie den Streubereich und die  Variationsbreite an. 
 
 ::: {.callout-caution collapse="true"}
-## Lösung Aufgabe 2c
+## LÃ¶sung Aufgabe 2c
 
 Streubereich (Wertebereich, in dem alle beobachteten Werte liegen): 
 
@@ -91,27 +91,27 @@ Hier steht ein Tipp.
 
 ## Aufgabe 3
 
-Hier sehen Sie die Verteilung der Häufigkeiten zu tbd. 
+Hier sehen Sie die Verteilung der HÃ¤ufigkeiten zu tbd. 
 
 a. Bestimmen Sie den Modalwert. 
 
-![Abbildung Säulendiagramm der Verteilung der absoluten Häufigkeiten aus Tabelle 6.3 aus Eid et al. (2017, S. 131)](img/table_modal.png){fig-alt="Säulendiagramm der Verteilung der absoluten Häufigkeiten."}
+![Abbildung SÃ¤ulendiagramm der Verteilung der absoluten HÃ¤ufigkeiten aus Tabelle 6.3 aus Eid et al. (2017, S. 131)](img/table_modal.png){fig-alt="SÃ¤ulendiagramm der Verteilung der absoluten HÃ¤ufigkeiten."}
 
 ::: {.callout-caution collapse="true"}
-## Lösung Aufgabe 3a
+## LÃ¶sung Aufgabe 3a
 
-Im vorliegenden Fall ist der Modalwert _Dissozial_ oder _Dissoziale Persönlichkeitsstörung_: 
+Im vorliegenden Fall ist der Modalwert _Dissozial_ oder _Dissoziale PersÃ¶nlichkeitsstÃ¶rung_: 
 
-$Mo=$ Dissoziale Persönlichkeitsstörung
+$Mo=$ Dissoziale PersÃ¶nlichkeitsstÃ¶rung
 
 :::
 
 ::: {.callout-tip collapse="true"}
 ## Tipp
 
-Es wäre falsch, die Häufigkeit (6) als Modalwert anzugeben. Der Modalwert ist der Wert der Variablen (die Merkmalsausprägung) und nicht der Wert der Häufigkeit!
+Es wÃ¤re falsch, die HÃ¤ufigkeit (6) als Modalwert anzugeben. Der Modalwert ist der Wert der Variablen (die MerkmalsausprÃ¤gung) und nicht der Wert der HÃ¤ufigkeit!
 
-Ausserdem gilt: Der Modus ist dann nicht eindeutig bestimmbar, wenn jede Merkmalsausprägung nur einmal vorkommt.
+Ausserdem gilt: Der Modus ist dann nicht eindeutig bestimmbar, wenn jede MerkmalsausprÃ¤gung nur einmal vorkommt.
 
 
 :::
