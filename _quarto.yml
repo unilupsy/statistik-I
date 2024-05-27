@@ -25,10 +25,12 @@ website:
        - pages/chapters/page_1.qmd
        - pages/chapters/page_2.qmd
        - pages/chapters/webR.qmd
-    - section: Uebungen
+    - section: Übungen
       contents:
-       - pages/chapters/uebung_1.qmd
-       - pages/chapters/uebung_3.qmd
+       - pages/chapters/exercise01.qmd
+       - pages/chapters/exercise02.qmd
+       - pages/chapters/exercise03.qmd
+       - pages/chapters/exercise04.qmd
 format:
   html:
     theme:
